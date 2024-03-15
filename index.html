@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+     <meta charset="utf-8">
+	 <meta name="author" content="Edivaldo">
+	 <meta name="descrioption" content= "Atividade Segundo Bimestre ">
+	 	 <title>Atividade 2° Bimestre P2 </title>
+<style>
+html{
+background-color: slategrey;
+	}
+body{
+margin:0;
+	}
+
+div.aqui{
+margin-top:5%;
+padding:20px;
+text-align:center;
+color:darkred;
+font-family: stencil;
+}
+
+ul{
+
+list-style-type: none;
+margin:auto;
+padding:15px;
+background-color: black;  
+position: fixed;
+top: 0;
+width:100%;
+z-index: 1;
+}
+li{
+float: left;
+border-right: 1px solid grey;
+}
+
+li a{
+display:inline-block;
+color: lightgrey;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+transition: background-color 3s;
+}
+
+a:hover{
+color: lightblue;
+}
+
+.active{
+background-color: grey;
+}
+
+li a:hover:not(.active){
+background-color: grey; 
+}
+
+li:last-child{
+margin-right: 50px;
+border-right: none;
+float: right;
+}
+
+
+
+div.relativa{
+	display: block;
+	margin:20px;
+	position:absolut;
+	float: left;
+	width:400px;
+	height:750px;
+	border: 3px solid lightgreygrey;
+	background-color: black;
+	z-index: -1;
+	}
+
+div.img{
+	position: relative;
+	top: 40px;
+	left: 40px;
+	width:300px;
+	height: 350px;
+	padding:10px;
+	
+	}
+
+div.informacoes{
+	position: absolute;
+	right:20px;
+	top: 650px;
+	}
+
+div.abaixo{
+	position:absolut;
+	display: inline-block;
+	width: 98%;
+	margin-left: 25px;
+	}
+
+div.para{
+	display: inline-block;
+	position: relative;
+	top: 100px;
+	left: 30px;
+	}
+
+div.dados{
+	
+	position: relative;
+	top: 100px;
+	height: 400px;
+	width: 95%;
+	margin-left: 20px;
+	}
+
+
+div.nasc{
+	position: relative;
+	top: 50px;
+	left: 70%;
+	width: 100px;
+	}
+	
+div.estado{
+	position: relative;
+	top:0px;
+	bottom: 100px;
+	left: 40%;
+	width: 100px;
+	}
+
+div.sexo{
+	position: relative;
+	top: 20px;
+	bottom: 20px;
+    left: 5%;
+    width: 200px;
+	}
+	
+div.absoluta{
+	position: absolute;
+	top:10px;
+	right:80px;
+	width:250px;
+	height:500px;
+	
+	}
+	
+input[type=text]{
+	width : 95%;
+	box-sizing: border-box;
+	border: 2px solid grey;
+	border-radius: 4px;
+	font-size: 16px;
+	font-size: 5px 10px 10px 10px;
+	background-color: WhiteSmoke;
+	}
+div.legen{
+	position: relative;
+	width: 70%;
+	}
+	
+div.end{
+    position: relative;
+	top:10px;
+	right:0px;
+	width:95%;
+	height:300px;
+	margin-left: 20px;
+    }
+div.num{
+	width: 20%;
+	}
+div.pais{
+	position: relative;
+	margin-left: 5%;
+	top:0;
+	bottom: 15px;
+	}
+div.senha{
+	position: relative;
+	top: 30px;
+	width: 95%;
+	margin-left: 20px;
+	}
+input[type=password]{
+	width : 25%;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	font-size: 16px;
+	font-size: 5px 10px 10px 10px;
+	}
+
+div.escola{
+    position: relative;
+	top:30px;
+	width:95%;
+	margin-left: 20px;
+    }
+div.inst{
+	position: relative;
+	top:10px;
+	width:95%;
+	margin-left: 20px;
+    }
+
+div.conclu{
+	position: relative;
+	left: 40%;
+	bottom: 3px;
+	}
+	
+div.areaint{
+	position: relative;
+	top:50px;
+	right:px;
+	width:95%;
+	height:30px;
+	margin-left: 20px;
+    }
+	
+div.num{
+	width: 20%;
+	}
+div.coment{
+	position: absolute;
+	right:300px;
+	top: 50px;
+	}
+div.subm{
+	position: relative;
+	top: 320px;
+	margin-left: 40%;
+	width:95%;
+	height:300px;
+	}
+div.imagens{
+	display: inline block;
+	}
+.sinopse{
+	display: block;
+	position: absolute;
+	right:20px;
+	top: 450px;
+	color: white;
+	}
+ 
+p::first-letter{
+	color:lightgrey;
+	font-variant: small-caps;
+	font-size:40px;
+	}
+</style>
+ </head>
+ <body>
+	<ul>
+	<li><a href="#tudo">Tudo</a></li>
+	<li><a href="#acao">Ação</a></li>
+	<li><a href="#aventura">Aventura</a></li>
+	<li><a href="#ficcao">Ficção</a></li>
+	<li><a href="#terror">Terror</a></li>
+	<li><a href="#podcast">Infantil</a></li>
+	<li> <a href="#cadastro">Cadastre-se </a></li>
+	</ul>
+	
+	
+<div class="aqui">
+<h1 >PimentaFlix</h1>
+<h2 >O melhor conteúdo está aqui</h2>
+<br>
+<br>
+</div>
+
+<div class="imagens">
+<div class="relativa">
+	<div class="img">
+    <img src="harry.jpg">
+	<p class="sinopse">Depois de longas e solitárias férias, Harry Potter recebe a inesperada visita de dois dementadores. O encontro rende ao bruxo uma ameaça: ele pode ser expulso de Hogwarts por ter usado magia fora da escola. Não bastasse isso, os alunos mal falam com ele, por não acreditarem que Voldemort está realmente de volta.</p>
+	<div class="informacoes"> <a href="" target="blank">+ informações</a></div>
+</div>
+</div>
+<div class="relativa">
+	<div class="img">
+    <img src="como_eu_era.jpg">
+	<p class="sinopse">Will (Sam Claflin) é um jovem rico e bem-sucedido, até sofrer um grave acidente que o deixa preso a uma cadeira de rodas. Profundamente depressivo, sua família contrata Louisa (Emilia Clarke) para fazer companhia a ele.</p>
+	<div class="informacoes"> <a href="" target="blank">+ informações</a></div>
+	
+	</div>
+</div>
+
+<div class="relativa">
+	<div class="img">
+    <img src="sexto.jpg">
+	<p class="sinopse">Um garoto vê o espírito de pessoas mortas à sua volta. Um dia, ele conta o segredo ao psicólogo Malcolm Crowe, que tenta ajudá-lo a descobrir o que está por trás dos distúrbios. A pesquisa de Crowe sobre os poderes do garoto causa consequências inesperadas a ambos.</p>
+	<div class="informacoes"> <a href="" target="blank">+ informações</a></div>
+	
+</div>
+</div>
+<div class="relativa">
+	<div class="img">
+    <img src="estranho.jpg">
+	<p class="sinopse">Após sua carreira ser destruída, um brilhante, porém arrogante, cirurgião ganha uma nova chance em sua vida quando um feiticeiro o treina para se tornar o Mago Supremo.</p>
+	<div class="informacoes"> <a href="" target="blank">+ informações</a></div>
+</div>
+</div>
+<div class="relativa">
+	<div class="img">
+    <img src="festa.jpg">
+	<p class="sinopse">Janet, uma política de esquerda, convida os amigos do partido para comemorar a nomeação para o cargo de Ministra da Saúde britânica, coroando um objetivo que ela perseguia há anos. Seus amigos também têm suas revelações. O intelectual Bill, que transforma completamente o evento, fazendo a festa logo se transformar em pesadelo.</p>
+	<div class="informacoes"> <a href="" target="blank">+ informações</a></div>
+</div>
+</div>
+<div class="relativa">
+	<div class="img">
+    <img src="toy.jpg">
+	<p class="sinopse">Woody, Buzz Lightyear e o resto da turma embarcam em uma viagem com Bonnie e um novo brinquedo chamado Forky. A aventura logo se transforma em uma reunião inesperada quando o ligeiro desvio que Woody faz o leva ao seu amigo há muito perdido, Bo Peep.</p>
+	<div class="informacoes"> <a href="" target="blank">+ informações</a></div>
+</div>
+</div>
+<div class="relativa">
+	<div class="img">
+    <img src="cada.jpg">
+	<p class="sinopse">A Terra é invadida por uma raça alienígena em busca de um novo lar. Porém, uma esperta garota chamada Tip consegue fugir e acaba virando cúmplice de um alienígena exilado chamado Oh. Os dois fugitivos embarcam em uma grande aventura.</p>
+	<div class="informacoes"> <a href="" target="blank">+ informações</a></div>
+</div>
+</div>
+<div class="relativa">
+	<div class="img">
+    <img src="elis.jpg">
+	<p class="sinopse">Cantora desde a infância, Elis Regina entra na vida adulta deixando o Rio Grande do Sul para espalhar seu talento pelo Brasil. Em rápida ascensão, ela logo conquista uma legião de fãs. Estrela de TV, polêmica, intensa e briguenta, a "Pimentinha" não tarda a ser reconhecida como a maior voz do Brasil, em carreira marcada por altos e baixos.</p>
+	<div class="informacoes"> <a href="" target="blank">+ informações</a></div>
+</div>
+</div>
+</div>
+<br><br><br>
+<div class="abaixo">
+<form action="/action_page.php" autocomplete="on">
+ <div class="para"> 
+   <h2 id="cadastro">Para se cadastrar preencha o formulário:</h2>
+ </div>
+   
+   <div class="dados">
+ <fieldset>
+	<legend> Dados Pessoais:</legend>
+
+	
+	<label for="fname" > Nome:</label> <br>
+	<input type="text" id="fname" name="fname" value="" autofocus maxlength="15"> <br><br>
+	
+	<label for="lname" > Sobrenome:</label> <br>
+	<input type="text" id="lname" name="lname" value=""> <br><br>
+
+	<div class="nasc">
+	
+	<label for="datemax">Nascimento:</label>
+	<input type="date" id="datemax" name="nascimento" max="2022-06-08">
+	
+	</div>
+	
+	 
+ <div class="sexo">
+	<label>
+	Sexo:
+	<select name="sexo">
+ <option value="Masculino">Masculino</option>
+	 <option value="Feminino">Feminino</option>
+	 <option value="Outro" selected>Outro</option>
+	 </select>
+	 </label>
+</div>
+<div class="estado">
+	<legend> Estado Civil:</legend>
+ <input type="radio"id="casado" name="est_civil" value="casado">
+ <label for="casado">Casado</label><br>
+ <input type="radio"id="solteiro" name="est_civil" value="solteiro">
+ <label for="solteiro">Solteiro</label><br>
+ <input type="radio"id="viuvo" name="est_civil" value="viuvo">
+ <label for="viuvo">Viúvo</label><br>
+ <input type="radio"id="divorciado" name="est_civil" value="divorciado">
+ <label for="divorciado">Divorciado</label><br><br>
+ </div>
+ </div>
+  </fieldset>
+ <br>
+ <br>
+ <div class="end">
+	<fieldset>
+	
+	<legend> Endereço:</legend>
+	<label for="Rua" >Rua:</label> <br>
+	<input type="text" id="Rua" name="Rua" value=""> <br><br>
+	<div class= num>
+	<label for="N" > Nº:</label> <br>
+	<input type="text" id="N" name="N" value="" maxlength="5"> <br><br>
+	</div>
+	
+	<label for="bairro" > Bairro:</label> <br>
+	<input type="text" id="bairro" name="bairro" value="" maxlength="30"> <br><br>
+	
+	<label for="cidade" > Cidade:</label> <br>
+	<input type="text" id="cidade" name="cidade" value=""> <br><br>
+	
+	<label for="estado" > Estado:</label> <br>
+	<input type="text" id="estado" name="estado" value=""> <br><br>	
+	
+	
+
+<div class="pais">
+	País:
+	<select name="Pais">
+    <optgroup label="País">
+    <option value="pais">Brasil</option>
+	</optgroup>
+	</select>
+</div>	
+</fieldset>
+</div>
+<br><br><br>
+
+<div class="senha">
+<fieldset>
+	<legend>email e senha:</legend>	
+	<label for="email" > e-mail:</label> <br>
+	<input type="email" id="email" name="email" value=""> <br><br>
+	
+	<label for="senha"> Cadastre uma senha: </label><br>
+	<input type="password" id="senha" name="senha" value="" >	
+</fieldset>
+</div>
+<br><br><br>
+
+<div class="escola">	
+	<fieldset>
+
+	<legend> Dados Escolares:</legend>
+	
+ <input type="radio"id="ensino fundamental incompleto" name="escolaridade" value="ensino fundamental incompleto">
+ <label for="ensino fundamental incompleto">Ensino fundamental Incompleto</label><br>
+ 
+ <input type="radio"id="Ensino fundamental completo" name="escolaridade" value="Ensino fundamental completo">
+ <label for="ensino fundamental completo">Ensino fundamental completo</label><br>
+ 
+ <input type="radio"id="ensino médio incompleto" name="escolaridade" value="ensino médio incompleto">
+ <label for="ensino médio incompleto">Ensino médio incompleto</label><br>
+ 
+  <input type="radio"id="ensino medio completo" name="escolaridade" value="ensino medio completo">
+ <label for="ensino medio completo">Ensino medio completo</label><br>
+ 
+ <input type="radio"id="ensino superior incompleto" name="escolaridade" value="ensino superior incompleto">
+ <label for="ensino superior incompleto">Ensino superior incompleto</label><br>
+ 
+<input type="radio"id="ensino superior completo" name="escolaridade" value="ensino superior completo">
+ <label for="ensino superior completo">Ensino superior completo</label><br><br>
+		<div class="inst">
+	<label for="instituição" >Instituição:</label> <br>
+	<input type="text" id="instituição" name="instituição" value=""> <br><br>
+		</div>
+		
+	 <div class="conclu">
+	<label for=dt_conclusao>Conclusão:</label><br>
+	<input type="month" id= name="conclusao" value="">
+	 </div>
+	</fieldset>
+</div>	
+	
+	
+	
+<div class="areaint">
+<fieldset>
+	<legend> Interesses </legend>
+	
+ <input type="checkbox"id="Ficcao cientifica" name="preferencias" value="Ficcao cientifica">
+ <label for="Ficcao cientifica">Ficção Científica</label><br>
+ <input type="checkbox"id="Ação" name="preferencias" value="Ação">
+ <label for="Ação">Ação</label><br>
+ <input type="checkbox"id=" Aventura" name="preferencias" value="Aventura">
+ <label for="Aventura">Aventura</label><br>
+ <input type="checkbox"id="Terror" name="preferencias" value="Terror">
+ <label for="Terror">Terror</label><br><br>
+ <input type="checkbox"id="Suspense" name="preferencias" value="Suspense">
+ <label for="Suspense">Suspense</label><br><br>
+ <input type="checkbox"id="Infantil" name="preferencias" value="Infantil">
+ <label for="Infantil">Infantil</label><br><br> 
+  <input type="checkbox"id="Drama " name="preferencias" value="Drama ">
+ <label for="Drama "> Drama</label><br><br> 
+  <input type="checkbox"id="comedia romantica" name="preferencias" value="comedia romantica ">
+ <label for="comedia romantica ">Comédia Romântica </label><br><br> 
+<div class= "coment"> 
+ <label for="area"> Deixe seu comentário: </label> <br>
+	<textarea id="area" name="menssage" rows="10" cols="30"> </textarea>
+</div>
+</div>	
+<div class="subm">	
+	<input type="submit" value="Enviar">
+	<input type="reset" value="Limpar">
+</div>
+</form>
+</div>
+	
+
+ </body>
+ </html>
+
+	
